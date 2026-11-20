@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Kabankalan Catholic College - knowledge, competence, and character.">
+  <title>Kabankalan Catholic College</title>
+  <link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+  <div class="topbar">
+    <div class="container">
+      <span>Guanzon St., Brgy. 1, Kabankalan City, Philippines</span>
+      <div class="topbar-links">
+        <a href="mailto:kcc_1927@yahoo.com">kcc_1927@yahoo.com</a>
+        <a href="https://www.facebook.com/share/1AAuuP4sMT/" target="_blank" rel="noopener">Facebook</a>
+      </div>
+    </div>
+  </div>
+
+  <header class="navbar">
+    <div class="container nav-inner">
+      <a class="brand" href="index.html" aria-label="Kabankalan Catholic College home">
+        <img src="assets/kcc-logo.png" alt="Kabankalan Catholic College seal">
+        <div>
+          Kabankalan Catholic College
+          <span>Since 1927</span>
+        </div>
+      </a>
+
+      <button class="menu-btn" type="button" aria-label="Toggle navigation" aria-expanded="false">&#9776;</button>
+      <nav class="nav-links" aria-label="Main navigation">
+        <a class="active" href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="courses.html">Academics</a>
+        <a href="events.html">Campus Life</a>
+        <a href="contact.html">Contact</a>
+        <a class="apply-btn" href="contact.html">Inquire Now</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="container">
+        <div class="hero-content">
+          <div class="eyebrow">Welcome to KCC</div>
+          <h1>Knowledge.<br>Competence.<br>Character.</h1>
+          <p>A Catholic community dedicated to forming learners with faith, integrity, and the skills to serve and lead.</p>
+          <div class="hero-actions">
+            <a class="button button-gold" href="courses.html">Explore Programs</a>
+            <a class="button button-outline" href="about.html">Discover KCC</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="stats" aria-label="College highlights">
+      <div class="container stats-grid">
+        <div class="stat"><strong>1927</strong><span>Founded</span></div>
+        <div class="stat"><strong>Faith</strong><span>Catholic Education</span></div>
+        <div class="stat"><strong>Learn</strong><span>Knowledge</span></div>
+        <div class="stat"><strong>Lead</strong><span>Character</span></div>
+      </div>
+    </section>
+
+    <section class="welcome">
+      <div class="container welcome-grid">
+        <div class="welcome-logo">
+          <img src="assets/kcc-logo.png" alt="Kabankalan Catholic College official seal">
+        </div>
+        <div>
+          <div class="section-kicker">About Kabankalan Catholic College</div>
+          <h2>Education rooted in faith and purpose.</h2>
+          <p class="welcome-copy">Kabankalan Catholic College provides a values-centered learning environment that develops capable graduates prepared for their careers, communities, and the responsibilities of Christian leadership.</p>
+          <a class="button button-blue" href="about.html">Learn About KCC</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="programs">
+      <div class="container">
+        <div class="program-heading">
+          <div class="section-kicker">Academic Excellence</div>
+          <h2>Pathways for every ambition.</h2>
+        </div>
+        <div class="program-grid">
+          <article class="program-card">
+            <div class="card-number">01</div>
+            <h3>College Programs</h3>
+            <p>Degree programs designed to build professional competence and prepare students for meaningful careers.</p>
+          </article>
+          <article class="program-card">
+            <div class="card-number">02</div>
+            <h3>Senior High School</h3>
+            <p>A strong academic foundation with pathways that support future study and career readiness.</p>
+          </article>
+          <article class="program-card">
+            <div class="card-number">03</div>
+            <h3>Campus Life</h3>
+            <p>A welcoming community that nurtures service, leadership, talent, friendship, and personal growth.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="cta">
+      <div class="container cta-inner">
+        <h2>Begin your journey at Kabankalan Catholic College.</h2>
+        <a class="button button-gold" href="contact.html">Request Information</a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div>
+          <div class="footer-brand">
+            <img src="assets/kcc-logo.png" alt="">
+            <span>Kabankalan Catholic College</span>
+          </div>
+        </div>
+        <div>
+          <h4>Visit Us</h4>
+          <p>Guanzon St., Brgy. 1<br>Kabankalan City, Philippines</p>
+        </div>
+        <div>
+          <h4>Get in Touch</h4>
+          <div class="footer-links">
+            <a href="mailto:kcc_1927@yahoo.com">kcc_1927@yahoo.com</a>
+            <a href="https://www.facebook.com/share/1AAuuP4sMT/" target="_blank" rel="noopener">Facebook Page</a>
+          </div>
+        </div>
+      </div>
+      <div class="copyright">&copy; 2026 Kabankalan Catholic College. All rights reserved.</div>
+    </div>
+  </footer>
+
+  <script>
+    const menuButton = document.querySelector(".menu-btn");
+    const navLinks = document.querySelector(".nav-links");
+
+    menuButton.addEventListener("click", () => {
+      const isOpen = navLinks.classList.toggle("open");
+      menuButton.setAttribute("aria-expanded", String(isOpen));
+    });
+  </script>
+</body>
+</html>
